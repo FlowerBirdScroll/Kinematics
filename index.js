@@ -13,6 +13,8 @@ window.addEventListener('load', function() {
     let valV0Unit1 = 0
     let valV0Unit2 = 0
 
+    CalcAndUpdate(  )
+    
     g.addEventListener('keyup', function( event ) {
         valG = event.target.value
         CalcAndUpdate( )
