@@ -8,6 +8,55 @@
 </head>
 <body>
     <p>首頁</p>
+
+    <hr/>
+    <div id = "part1" style="font-family:微軟正黑體">
+        
+        <h2>根據煞車距離或滑行距離反推初速度</h2>
+        <ul>
+            <li>乾燥地面動摩擦係數：
+                <ul>
+                    <li>汽車：0.5~0.8</li>
+                    <li>機車：0.3~0.5</li>
+                </ul>
+            </li>
+                
+            <li>濕潤地面動摩擦係數：
+                <ul>
+                    <li>汽車：0.5~0.8</li>
+                    <li>機車：0.3~0.5</li>
+                </ul>
+            </li>
+        </ul>
+
+        <br/>
+
+        <span>重力加速度：</span>
+        <input id="g" type="number" value="9.8" style="width:70px">
+        <span>(m/s<sup>2</sup>)</span>
+        <br/>
+
+        <span>動摩擦係數：</span>
+        <input id="coeff" type="number" value="0.5" step="0.1" style="width:70px">
+        <br/>
+
+        <span>路徑長　　：</span>
+        <input id="path" type="number" value="10" style="width:70px">
+        <span>(m)</span>
+        <br/>
+
+        <span>初速度　　：</span>
+        <input id="v0Unit1" type="number" style="width:70px" readonly>
+        <span>(m/s) = </span>
+        <input id="v0Unit2" type="number" style="width:70px" readonly>
+        <span>(km/hr)</span>
+        <br/>
+        
+    </div>
+
+    <hr/>
+
+
     <script src = "./index.js"></script>
 </body>
 </html>
